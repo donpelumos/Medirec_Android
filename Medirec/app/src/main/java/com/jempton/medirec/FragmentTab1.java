@@ -71,11 +71,13 @@ public class FragmentTab1 extends Fragment {
         recordRowFrame.setLayoutParams(recordRowFrameParams);
 
         LinearLayout recordRow = new LinearLayout(getActivity().getApplicationContext());
+
         LinearLayout.LayoutParams recordRowParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
         recordRow.setLayoutParams(recordRowParams);
         recordRow.setOrientation(LinearLayout.HORIZONTAL);
         recordRow.setGravity(Gravity.CENTER_VERTICAL);
+        //recordRow.setBackground(getResources().getDrawable(R.drawable.background_rounded_dialog));
         if(type == 1) {
             recordRow.setBackground(getResources().getDrawable(R.drawable.background_record_row));
         }
@@ -83,7 +85,7 @@ public class FragmentTab1 extends Fragment {
             recordRow.setBackground(getResources().getDrawable(R.drawable.background_record_row_two));
         }
         View box = new View(getActivity().getApplicationContext());
-        LinearLayout.LayoutParams boxParams = new LinearLayout.LayoutParams(14*(int)getScreenDensity(),14*(int)getScreenDensity());
+        LinearLayout.LayoutParams boxParams = new LinearLayout.LayoutParams(10*(int)getScreenDensity(),10*(int)getScreenDensity());
         boxParams.setMargins((int)(10*getScreenDensity()),(int)(10*getScreenDensity()),(int)(10*getScreenDensity()),
                 (int)(10*getScreenDensity()));
         box.setLayoutParams(boxParams);

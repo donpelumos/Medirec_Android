@@ -51,7 +51,7 @@
             <ListView
                 android:layout_width="match_parent"
                 android:layout_marginTop="8dp"
-                android:layout_height="155dp"
+                android:layout_height="103dp"
                 android:divider="#9e9d9d"
                 android:dividerHeight="1dp"
                 android:scrollbars="none"

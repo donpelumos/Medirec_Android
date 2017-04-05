@@ -62,7 +62,7 @@ public class FragmentTab3 extends Fragment {
         list1.add(new ListAccountOptions("Log Out", R.drawable.signout));
         list2.add(new ListAccountOptions("My Doctors", R.drawable.doctors));
         list2.add(new ListAccountOptions("My Hospitals", R.drawable.hospital));
-        list2.add(new ListAccountOptions("My Records", R.drawable.records));
+        //list2.add(new ListAccountOptions("My Records", R.drawable.records));
         list3.add(new ListAccountOptions("About", R.drawable.about));
         list3.add(new ListAccountOptions("Privacy Policy", R.drawable.shield));
         list3.add(new ListAccountOptions("Terms of Use", R.drawable.terms));
