@@ -64,7 +64,7 @@ public class ActivityMessagesDoctor extends AppCompatActivity {
         messagesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(ActivityMessagesDoctor.this, ActivityMessageChatScreen.class);
+                Intent intent = new Intent(ActivityMessagesDoctor.this, ActivityMessageChatScreenDoctor.class);
                 startActivity(intent);
             }
         });

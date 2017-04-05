@@ -13,11 +13,13 @@ import android.text.style.UnderlineSpan;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by BALE on 29/11/2016.
@@ -29,6 +31,7 @@ public class ActivityLogin extends AppCompatActivity {
     Spinner userType;
     TextView signUpLink, notJoined;
     Typeface robotoThin, robotoLight, gothic;
+    int loginType = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,17 @@ public class ActivityLogin extends AppCompatActivity {
         };
         a1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         userType.setAdapter(a1);
+        userType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                loginType = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         notJoined = (TextView)findViewById(R.id.notJoined);
         notJoined.setTypeface(gothic);
         signUpLink = (TextView)findViewById(R.id.signUpLink);
@@ -82,8 +96,19 @@ public class ActivityLogin extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActivityLogin.this,ActivityFeed.class);
-                startActivity(intent);
+                switch(loginType) {
+                    case 0:
+                        Toast.makeText(ActivityLogin.this,"Select a valid type", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Intent intent = new Intent(ActivityLogin.this, ActivityFeed.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        Intent doctorIntent = new Intent(ActivityLogin.this, ActivityFeedDoctor.class);
+                        startActivity(doctorIntent);
+                        break;
+                }
             }
         });
     }

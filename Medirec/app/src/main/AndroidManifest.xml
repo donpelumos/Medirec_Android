@@ -118,6 +118,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ActivityMyHospitals" />
         </activity>
+        <activity
+            android:name=".ActivityFeedDoctor"
+            android:label="Feed"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity
+            android:name=".ActivityMessagesDoctor"
+            android:label="Messages"
+            android:parentActivityName=".ActivityFeedDoctor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeedDoctor" />
+        </activity>
+        <activity
+            android:name=".ActivityMessageChatScreenDoctor"
+            android:label="Message Chat"
+            android:parentActivityName=".ActivityMessagesDoctor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMessagesDoctor" />
+        </activity>
     </application>
 
 </manifest>
