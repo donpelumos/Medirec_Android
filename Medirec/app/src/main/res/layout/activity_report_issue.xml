@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:hint="Subject"
+            android:id="@+id/issueName"
+            android:textColor="#343434" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:hint="Description . . ."
+        android:gravity="top"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="50dp"
+        android:padding="5dp"
+        android:id="@+id/issueBody"
+        android:textColor="#343434"
+        android:textSize="14sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:id="@+id/reportButton"
+            android:text="Report"
+            android:background="@drawable/background_rounded_button_full"/>
+    </LinearLayout>
+</LinearLayout>

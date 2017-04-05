@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundRed">#ca080f</color>
+    <color name="appBackground">#ebebec</color>
+    <color name="surgicalRecord">#0ab78f</color>
+    <color name="diagnosisRecord">#b7ab0a</color>
+</resources>

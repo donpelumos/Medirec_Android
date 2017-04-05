@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jempton.medirec" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".ActivitySplash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityLogin"
+            android:label="Login">
+
+        </activity>
+        <activity
+            android:name=".ActivitySignUp"
+            android:label="Sign Up">
+
+        </activity>
+        <activity
+            android:name=".ActivityFeed"
+            android:label="Feed"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity
+            android:name=".ActivityMedicalRecord"
+            android:label="Medical Record">
+
+        </activity>
+        <activity
+            android:name=".ActivityMessages"
+            android:label="Messages"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityMessageChatScreen"
+            android:label="Message Chat"
+            android:parentActivityName=".ActivityMessages">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMessages" />
+        </activity>
+        <activity
+            android:name=".ActivityBasicMedicalInformation"
+            android:label="Medical Information"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityProfile"
+            android:label="Profile"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityReportIssue"
+            android:label="Report an Issue"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityResetPassword"
+            android:label="Reset Password"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityMyDoctors"
+            android:label="My Doctors"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityAddNewDoctor"
+            android:label="Add New Doctor"
+            android:parentActivityName=".ActivityMyDoctors">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMyDoctors" />
+        </activity>
+        <activity
+            android:name=".ActivityMyHospitals"
+            android:label="My Hospitals"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ActivityFeed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityFeed" />
+        </activity>
+        <activity
+            android:name=".ActivityAddNewHospital"
+            android:label="Add New Hospital"
+            android:parentActivityName=".ActivityMyHospitals">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMyHospitals" />
+        </activity>
+    </application>
+
+</manifest>

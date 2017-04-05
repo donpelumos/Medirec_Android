@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subLabel1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp"
+                android:text="Account"
+                android:textSize="16sp"
+                android:textColor="@color/backgroundRed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subLabel1b"
+                android:text="Account"
+                android:textSize="22sp"
+                android:textColor="@color/backgroundRed"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="234dp"
+                android:divider="#9e9d9d"
+                android:dividerHeight="1dp"
+                android:scrollbars="none"
+                android:id="@+id/subList1"
+                android:background="@drawable/background_curved_list"
+                android:choiceMode="singleChoice">
+            </ListView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subLabel2"
+                android:text="Medical Information"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="14dp"
+                android:textSize="16sp"
+                android:textColor="@color/backgroundRed"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="155dp"
+                android:divider="#9e9d9d"
+                android:dividerHeight="1dp"
+                android:scrollbars="none"
+                android:id="@+id/subList2"
+                android:background="@drawable/background_curved_list"
+                android:choiceMode="singleChoice">
+            </ListView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subLabel3"
+                android:text="More Information"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="14dp"
+                android:textSize="16sp"
+                android:textColor="@color/backgroundRed"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="155dp"
+                android:scrollbars="none"
+                android:divider="#9e9d9d"
+                android:dividerHeight="1dp"
+                android:id="@+id/subList3"
+                android:background="@drawable/background_curved_list"
+                android:choiceMode="singleChoice">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
